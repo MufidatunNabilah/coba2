@@ -29,8 +29,9 @@
 ![img1](https://github.com/MufidatunNabilah/coba2/blob/master/6.1.PNG) <br>
 ![img1](https://github.com/MufidatunNabilah/coba2/blob/master/6.2.PNG) <br>
 # Soal 7
-![img1](https://github.com/MufidatunNabilah/coba2/blob/master/7.1.PNG) <br>
+![img1](https://github.com/MufidatunNabilah/coba2/blob/master/7.6.PNG) <br>
 ![img1](https://github.com/MufidatunNabilah/coba2/blob/master/7.2.PNG) <br>
 ![img1](https://github.com/MufidatunNabilah/coba2/blob/master/7.3.PNG) <br>
 ![img1](https://github.com/MufidatunNabilah/coba2/blob/master/7.4.PNG) <br>
 ![img1](https://github.com/MufidatunNabilah/coba2/blob/master/7.5.PNG) <br>
+
