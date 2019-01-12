@@ -1,0 +1,39 @@
+<!Doctype html>
+<html>
+<head>
+    <title>Coba Bintang</title>
+</head>
+    <body>
+        <script>
+            var angka = prompt("Masukkan angka", "");
+            var j = parseInt(angka);
+            var i;
+            var k;
+
+            if (angka != null) {
+                if (j%2!=0){
+                    for (i=1; i<=j; i++){
+                        for(k=1; k<=j; k++){
+                            if(i===1 || i===j || k===1 || k===j){
+                                document.write(" * ");
+                                } else if(i%2!=0 || k%2!=0){
+                                    document.write(" * ");
+                                }else {document.write("&ensp;");}             
+                        }
+                        document.write("<br>");
+                    }
+                } else{
+                    for (i=1; i<=j; i++){
+                        for(k=1; k<=j; k++){
+                            if(i===1 || i===j || k===1 || k===j){
+                                document.write("*");
+                            }else{document.write("&ensp;");}  
+                        }
+                        document.write("<br>");
+                    }
+                }
+            }
+            
+        </script>
+    </body>
+</html>

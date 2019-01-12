@@ -1,0 +1,73 @@
+<!Doctype html>
+<html>
+<head>
+    <title>Soal 1</title>
+</head>
+<body>
+    <button onclick="objt(),ary(),bool(),objt2(),aryobjt()">Click here</button>
+    <p id="nama"></p>
+    <p id="alamat"></p>
+    <p id="hobi"></p>
+    <p id="menikah"></p>
+    <p id="sekolah"></p>
+    <p id="skills"></p>
+    
+    
+<script>
+    function objt(){
+       //simpan object
+        myobj = { name:"Mufi", address:"Sanur"};
+        objJSON = JSON.stringify(myobj);
+        localStorage.setItem("test", objJSON);
+    
+        //tampilkan object
+        text = localStorage.getItem("test");
+        obj = JSON.parse(text);
+        document.getElementById("nama").innerHTML = obj.name;
+        document.getElementById("alamat").innerHTML = obj.address; 
+    }
+    
+    function ary(){
+        // array
+        var i,x="";
+        myary = {"hobi" : ["Makan", "Tidur", "Nonton"]};
+        
+        // modify
+        myary.hobi[1] = "Membaca";
+        
+        for(i in myary.hobi){
+            x += myary.hobi[i] + "<br>";
+        }
+        document.getElementById("hobi").innerHTML = x;
+    }
+    
+    function bool(){
+        // boolean
+        mybln = false
+        document.getElementById('menikah').innerHTML = Boolean(mybln);
+    
+    }
+    
+    function objt2(){
+        // Object2
+        myobj2 = {school:["highSchool","university"]};
+        document.getElementById("sekolah").innerHTML = myobj2.school[0];
+    }
+    
+    
+    function aryobjt(){
+        //Array of Object
+        var j,k="";
+        myaryobj = {"hobi" : ["Makan", "Tidur", "Nonton"],
+                    "skills" : ["A","B","C"]
+                   };
+        for(j in myaryobj.skills){
+            k += myaryobj.skills[j] + "<br>";
+        }
+        document.getElementById("skills").innerHTML = k;
+    }
+    
+    
+</script>    
+</body>
+</html>

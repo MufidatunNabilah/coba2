@@ -1,0 +1,17 @@
+<!Doctype html>
+<html>
+<head>
+    <title>Coba Form</title>
+    <script type="text/javascript">
+        function ganti(){
+            var a = document.getElementById("gantii").innerHTML;
+            var rep = a.replace("ganti_kata(‘kelompok’,’o’,’a’)","“kelompok”")
+            document.getElementById("gantii").innerHTML = rep;
+        }
+    </script>
+</head>
+    <body>
+        <p id="gantii">ganti_kata(‘kelompok’,’o’,’a’)</p>
+        <button onclick="ganti()">Replace</button>
+    </body>
+</html>

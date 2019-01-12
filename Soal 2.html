@@ -1,0 +1,52 @@
+<!Doctype html>
+<html>
+<head>
+    <title>Coba Form</title>
+    <script type="text/javascript">
+        function validasi(form){
+            var minim = 8;
+            pola_uname = /^[a-z_]+$/;
+            pola_pass = /^[a-zA-Z0-9_]+$/;
+            
+            if(form.uname.value.length < minim){
+                alert("Username minimal harus 8 karakter");
+                form.uname.focus();
+                return(false);
+            } 
+            else if(!pola_uname.test(form.uname.value)){
+                alert("Username hanya boleh menggunakan huruf kecil dan underscore(_)");
+                form.uname.focus();
+                return(false);
+            }
+            else if(form.pass.value.length < minim){
+                alert("Password minimal harus 8 karakter");
+                form.pass.focus();
+                return(false);
+            }
+            else if(!pola_pass.test(form.pass.value)){
+                alert("Password Harus menggunakan Huruf Besar, Huruf Kecil, Angka, dan Underscore(_)");
+                form.pass.focus();
+                return(false);
+            } return(true);
+        }
+    </script>
+</head>
+    <body>
+        <form method="post" onsubmit="return validasi(this)">
+            <table align="center">
+                <tr>
+                    <td>Username</td>
+                    <td><input type="text" name="uname"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password"  name="pass"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td align="right"><input type="submit" value="Daftar"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

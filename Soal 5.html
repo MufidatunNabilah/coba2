@@ -1,0 +1,22 @@
+<!Doctype html>
+<html>
+<head>
+    <title>Soal 5</title>
+    <script type="text/javascript">
+        function jabat(){
+            var a =document.getElementById("tamu").value;
+            b = parseInt(a);
+            total = b*(b-1)/2;
+            
+            document.getElementById("totaljabat").innerHTML = "Jumlah Jabat Tangan : " +total;
+        }
+    </script>
+</head>
+    <body>
+        <label>Masukkan Jumlah Tamu</label><br>
+        <input type:"text" id="tamu">
+        <button onclick="jabat()">Hitung</button>
+        
+        <p id="totaljabat"></p>
+    </body>
+</html>
